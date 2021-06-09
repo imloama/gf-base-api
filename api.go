@@ -95,7 +95,7 @@ func Fail(r *ghttp.Request, message string, errorCode string) {
 /**
  * 表格接口返回正常的结果
  */
-func OkTable(r *ghttp.Request, current int, page int, total int, list interface{}) {
+func Table(r *ghttp.Request, current int, page int, total int, list interface{}) {
 	r.Response.WriteJson(TableAPIResult{
 		Code:    CODE_OK,
 		Message: "ok",
